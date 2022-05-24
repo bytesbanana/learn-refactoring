@@ -56,6 +56,7 @@ function includePeerDependencies(deps, versions) {
     react: versions.react,
     "@emotion/react": versions["@emotion/react"],
     "@emotion/styled": versions["@emotion/styled"],
+    "@babel/runtime": versions["@babel/runtime"]
   };
 
   if (newDeps["@mui/lab"]) {
@@ -108,6 +109,7 @@ export function getDependencies(raw, options = {}) {
     "react-dom": "latest",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@babel/runtime": "latest",
     "@mui/material": "5.7.0",
     "@mui/icons-material": getMuiPackageVersion("icons-material", muiCommitRef),
     "@mui/lab": getMuiPackageVersion("lab", muiCommitRef),
